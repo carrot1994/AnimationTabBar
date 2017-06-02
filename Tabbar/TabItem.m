@@ -210,7 +210,6 @@
  *  配置WclEmitterButton
  */
 - (void)setup {
-    //参数详情请见博客详解：http://blog.csdn.net/wang631106979/article/details/51258020
     CAEmitterCell *explosionCell = [CAEmitterCell emitterCell];
     explosionCell.name           = @"explosion";
     explosionCell.alphaRange     = 0.10;

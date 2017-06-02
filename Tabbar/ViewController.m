@@ -41,7 +41,7 @@
     //必须:设置选中图片、normal图片、title
     //可选:tabbar背景图片\背景颜色\字体\字色\图片文字间距\我自己添加了一点点粒子动画
     
-    TabBarView *tabBarView = [TabBarView initWithNormalImages:normalImages selectedImages:selectedImages titles:nil height:height];
+    TabBarView *tabBarView = [TabBarView initWithNormalImages:normalImages selectedImages:selectedImages titles:titles height:height];
     tabBarView.y = self.view.height - height;
     tabBarView.delegate = self;
     tabBarView.animation = YES;
