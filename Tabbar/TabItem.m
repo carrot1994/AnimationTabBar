@@ -50,7 +50,6 @@
         self.itemNormalColor = kTabTextColorDefault;
         self.itemSelectedColor = kTabTextColorSelected;
         
-       
         self.selectedImage = selectedImage;
         self.normalImage = image;
         self.title = title;
@@ -142,7 +141,9 @@
     
     _animated = animated;
     
-    
+    if (animated) {
+        [self setup];
+    }
 }
 
 
