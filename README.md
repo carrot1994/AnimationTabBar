@@ -17,7 +17,7 @@ AnimationTabBar 高度自定制Tabbar,可自定义bar高度、背景颜色、照
 1. `` ViewController addChildViewController``
 2.  init TabBarView 
 
-``
+```
 /** 选中照片array*/
 
 NSArray *selectedImages = @[@"icon_tab_home_pre",@"icon_tab_faxian_pre",@"icon_tab_vip_pre",@"icon_tab_me_pre"];
@@ -45,7 +45,7 @@ tabBarView.animation = YES;
 [self.view insertSubview:tabBarView atIndex:0];
 
 
-``
+```
 
 <p><p>
 
