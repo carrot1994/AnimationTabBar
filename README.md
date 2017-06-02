@@ -8,7 +8,7 @@ AnimationTabBar 高度自定制Tabbar,可自定义bar高度、背景颜色、照
 
 ## gif:
 
-![img](https://github.com/carrot1994/TopScrollBar/blob/master/topScrollBar.gif) 
+![img](https://github.com/carrot1994/AnimationTabBar/blob/master/AnimationTabBar.gif) 
 
 使用标签分页控件，在`ViewController`import`TabBarView.h`,按照以下方法使用
 ## Usage
