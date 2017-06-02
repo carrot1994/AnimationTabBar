@@ -6,7 +6,7 @@ AnimationTabBar 高度自定制Tabbar,可自定义bar高度、背景颜色、照
 <p><p>
 
 
-## gif1:默认有图片、文字、动画
+## gif1:默认有图片、文字、默认无动画
 
 ![img](https://github.com/carrot1994/AnimationTabBar/blob/master/AnimationTabBar.gif) 
 
@@ -34,6 +34,7 @@ CGFloat height = 60;
 TabBarView *tabBarView = [TabBarView initWithNormalImages:normalImages selectedImages:selectedImages titles:nil height:height];
 tabBarView.y = self.view.height - height;
 tabBarView.delegate = self;
+tabBarView.animation = YES;
 [self.view insertSubview:tabBarView atIndex:0];
 
 
