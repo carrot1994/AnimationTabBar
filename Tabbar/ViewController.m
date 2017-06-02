@@ -44,7 +44,9 @@
     TabBarView *tabBarView = [TabBarView initWithNormalImages:normalImages selectedImages:selectedImages titles:nil height:height];
     tabBarView.y = self.view.height - height;
     tabBarView.delegate = self;
+    tabBarView.animation = NO;
     [self.view insertSubview:tabBarView atIndex:0];
+    
     
     
   

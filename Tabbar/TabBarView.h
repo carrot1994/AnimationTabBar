@@ -38,5 +38,6 @@
 @property (nonatomic, assign) CGFloat titleMargin;
 /** tabbarDelegate*/
 @property (nonatomic, weak) id <TabarDelegate>delegate;
-
+/** 是否展示动画*/
+@property (nonatomic, assign) BOOL animation;
 @end

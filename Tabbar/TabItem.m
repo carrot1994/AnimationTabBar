@@ -50,9 +50,7 @@
         self.itemNormalColor = kTabTextColorDefault;
         self.itemSelectedColor = kTabTextColorSelected;
         
-        
-        [self setup];
-        
+       
         self.selectedImage = selectedImage;
         self.normalImage = image;
         self.title = title;
@@ -60,12 +58,14 @@
         [self addSubview:self.itemImageView];
         [self addSubview:self.textLabel];
         
+        
   
     }
     
     return self;
     
 }
+
 
 #pragma mark - 懒加载
 - (UIImageView *)itemImageView {
@@ -103,7 +103,7 @@
     
     [self setNeedsLayout];
     
-    if (selected) {
+    if (selected && self.animated) {
         [self animation];
     }
     
@@ -138,6 +138,12 @@
     
 }
 
+- (void)setAnimated:(BOOL)animated {
+    
+    _animated = animated;
+    
+    
+}
 
 
 #pragma mark - layout & setProperties

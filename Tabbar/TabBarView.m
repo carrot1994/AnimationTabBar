@@ -212,6 +212,16 @@
     }];
 }
 
+- (void)setAnimation:(BOOL)animation {
+    
+    _animation = animation;
+    
+    [self.itemArray enumerateObjectsUsingBlock:^(TabItem *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        obj.animated = animation;
+    }];
+    
+}
 
 - (void)setDelegate:(id<TabarDelegate>)delegate {
     

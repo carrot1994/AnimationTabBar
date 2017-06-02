@@ -25,5 +25,7 @@
 @property (nonatomic, strong) UIFont *itemFont;
 /** 文字和图片间距 */
 @property (nonatomic, assign) CGFloat titleMargin;
+/** 是否展示动画*/
+@property (nonatomic, assign) BOOL animated;
 
 @end
